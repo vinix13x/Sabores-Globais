@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  background: #ffffff;
+  height: 80px;
+  width: 100%;
+  display: flex; 
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  justify-content: space-between; 
+  align-items: center;
+  padding: 0 20px; 
+  position:fixed;
+  z-index: 10; 
+  background-color: white; 
+  padding: 20px; 
+}
+
+
+
+nav ul {
+  display: flex; 
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: #FF4B00;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+
+
+.checkbtn {
+  font-size: 30px;
+  color: #FF4B00;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 1050px) {
+  label.logo {
+    padding-left: 30px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 890px) {
+  .checkbtn {
+    display: block;
+  }
+  label.logo {
+    font-size: 22px;
+    margin-right: auto;
+  }
+  ul {
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    background: #FF4B00;
+    top: 80px;
+    left: -100%;
+    transition: all .5s;
+    flex-direction: column;
+    padding: 10px;
+    
+  }
+  nav ul li {
+    display: block;
+    margin: 5px 0
+    
+  }
+  nav ul li a {
+    font-size: 16px;
+    color: white;
+   
+  }
+  a:hover,
+  a.active {
+    background: none;
+   
+  }
+  #check:checked~ul {
+    left: 0;
+  }
+}
+
+section {
+  background: url("bg.jpg") no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}

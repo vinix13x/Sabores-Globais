@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+
+.cardtext {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 40px; 
+  }
+  
+  .cardtext h1 {
+    color: #ff2f00;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .cardtext h3 {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    width: 249px;
+    height: 301px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 0 10px; 
+  }
+
+  
+
+
+.card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
+    
+}
+  
+  .card-img {
+    width: 249px;
+    height: 235px;
+    border-radius: 25px;
+    object-fit: cover;
+  }
+  
+  .card h1 {
+    margin-top: 10px;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Jomhuria", serif;
+    font-style: normal;
+    color: #ff2f00;
+  }
+  
+  @media (max-width: 768px) {
+    .row {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .card {
+        width: 90%; 
+        margin: 10px 0; 
+    }
+
+    .card-img {
+      max-height: 650px;
+      width: 90%;
+  }
+}
+
