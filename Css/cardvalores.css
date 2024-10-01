@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+
 .valores {
   display: flex;
   justify-content: space-between;
@@ -5,8 +7,8 @@
 }
 
 .card {
-  background-color: white; 
-  color: #ff2f00; 
+  background-color: #ff461d; 
+  color: #ffff; 
   width: 25%;
   padding: 20px;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
@@ -24,20 +26,21 @@
   margin-bottom: 10px;
   display: block;
   text-align: left;
-  color: #ff2f00; 
+  color: #ffffff; 
 }
 
 .card h3 {
   margin: 10px 0;
-  font-size: 24px;
+  font-size: 38px;
+  font-family: "Jomhuria", serif;
   text-align: left;
-  color:  #ff2f00 
+  color:  #ffffff 
 }
 
 .card p {
   text-align: center;
-  font-size: 16px;
-  color:#333; 
+  font-size: 14px;
+  color:#ffffff; 
 }
 
 @media (max-width: 768px) {
@@ -57,7 +60,7 @@
   }
 
   .card h3 {
-    font-size: 20px; 
+    font-size: 34px; 
   }
 
   
