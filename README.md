@@ -26,7 +26,7 @@ https://vinix13x.github.io/Sabores-Globais/home.html
 ## 🚀 Como Usar
 
 1. Clone o repositório:
-   git clone https://github.com/seu-usuario/projeto-receitas.git
+   git clone https://github.com/vinix13x/Sabores-Globais
 
 2. Navegue até a pasta do projeto:
 cd projeto-receitas
