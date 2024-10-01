@@ -21,7 +21,7 @@ O objetivo deste projeto é desenvolver uma interface de usuário amigável e re
 
 ## 📱 Demonstração
 
-
+https://vinix13x.github.io/Sabores-Globais/home.html
 
 ## 🚀 Como Usar
 
