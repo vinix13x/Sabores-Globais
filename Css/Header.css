@@ -12,6 +12,46 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+nav ul .submenu {
+  display: none; /* Esconde o submenu inicialmente */
+  position: absolute;
+  align-items: center;
+  background: #FF4B00; /* Cor de fundo laranja */
+  text-align: center; /* Centralizar texto */
+  border-radius: 8px; /* Arredondar as bordas */
+   
+
+  
+}
+
+nav ul li:hover .submenu {
+  display: block;
+ 
+}
+
+
+nav ul .submenu li {
+  color: white; /* Cor do texto */
+  font-size: 10px;
+  text-align: center; /* Centralizar texto */
+  margin: 0; /* Remover margens entre itens */
+  
+
+}
+
+nav ul .submenu li a {
+  color: white; /* Cor do texto do link */
+  font-size: 15px;
+  padding: 10px 5px; 
+}
+
+.separator {
+  height: 1px; /* Altura da linha horizontal fina */
+  width: 150px;
+  background-color: white; /* Cor da linha */
+
+}
+
 nav {
   background: #ffffff;
   height: 80px;
@@ -74,10 +114,31 @@ nav ul li a {
   .checkbtn {
     display: block;
   }
+
   label.logo {
     font-size: 22px;
     margin-right: auto;
   }
+
+  .separator {
+    display: none;
+  }
+
+  nav ul .submenu {
+    display: block; 
+    position: static; 
+    background: none; 
+    padding: 0; 
+  }
+
+ 
+  nav ul .submenu li {
+    margin: 1px 0;
+    padding: 5px 0; 
+    text-align: center; 
+  
+  }
+  
   ul {
     position: fixed;
     width: 50%;
@@ -88,16 +149,18 @@ nav ul li a {
     transition: all .5s;
     flex-direction: column;
     padding: 10px;
-    
+   
   }
   nav ul li {
     display: block;
-    margin: 5px 0
+    margin: 5px 0;
+  
     
   }
   nav ul li a {
     font-size: 16px;
     color: white;
+    
    
   }
   a:hover,

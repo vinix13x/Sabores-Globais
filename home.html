@@ -31,9 +31,34 @@
         <img src="Assets/Logo.png" height="40px">
         
         <ul>
-            <li><a class="active" href="#">INICIO</a></li>
-            <li><a href="Pages/Sobre.html">SOBRE</a></li>
-        </ul>
+          <li><a class="active" href="#">INICIO</a></li>
+          <li><a href="Pages/Sobre.html">SOBRE</a></li>
+          <li>
+            <a href="#" class="dropdown">RECEITAS <i class="fas fa-chevron-down"></i></a>
+            <ul class="submenu">
+                <li>
+                    <a href="#">Brasileira</a>
+                    <div class="separator"></div>
+                </li>
+                <li>
+                    <a href="#">Françesa</a>
+                    <div class="separator"></div>
+                </li>
+                <li>
+                    <a href="#">Estadunidense</a>
+                    <div class="separator"></div>
+                </li>
+
+                <li>
+                  <a href="#">Japonesa</a>
+                  <div class="separator"></div>
+              </li>
+                <li>
+                    <a href="#">Itáliana</a>
+                </li>
+            </ul>
+          </li>
+      </ul>
     </nav>
 
     <div id="cabeca">
@@ -58,10 +83,11 @@
 
  <div class="card-container"></div>
   <div class="row">
-    <div class="card">
+    <div class="card" onclick="window.location.href='Pages/Brasileiras/Brasil.html'">
       <img src="Assets/Brasil/brasil.webp" alt="Imagem 1" class="card-img">
       <h1>Brasileira</h1>
     </div>
+    
     <div class="card">
       <img src="Assets/França/frança.jpg" alt="Imagem 2" class="card-img">
       <h1>Francesa</h1>
