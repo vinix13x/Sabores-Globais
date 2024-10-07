@@ -1,0 +1,241 @@
+
+
+
+
+iframe {
+  width: 700px;
+  max-width: 80%;
+  height: 295px;
+  border: 15px solid var(--cor4);
+  border-radius: 10px;
+  margin-top: 20px; 
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  color: red;
+}
+
+ul {
+    
+  display: inline-block;
+  
+}
+
+.laranja {
+  color: var(--cor4);
+  font-weight: bold;
+  margin-left: 60px;
+  margin-top: 50px; /* Espaço em cima */
+  margin-bottom: 50px; /* Espaço embaixo */
+}
+
+
+li {
+  text-align: justify;
+  line-height: 2;
+  font-weight: bolder;
+}
+
+
+
+.minha-lista {
+  list-style: none;
+  margin-left: 80px;
+  max-width: 165vh;
+}
+
+.lista1 {
+  list-style: none; /* Remove os marcadores padrões */
+  margin-left: 80px;
+  max-width: 165vh;
+}
+
+.lista1-item {
+  margin-bottom: 10px; /* Espaçamento entre os itens */
+  font-size: 16px;
+  position: relative; 
+}
+
+.lista1-item::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #FF4B00; 
+  border-radius: 50%; 
+  position: absolute;
+  left: -20px; 
+  top: 8.5px; 
+}
+
+
+#modo {
+  counter-reset: section; 
+}
+
+
+.titulo-numerado {
+  position: relative;
+  margin-left: 40px; 
+  font-size: 18px;
+}
+
+.titulo-numerado::before {
+  counter-increment: section; 
+  content: counter(section); 
+  width: 30px;
+  height: 30px;
+  background-color: #FF4B00; 
+  border-radius: 50%; 
+  color: white; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -40px;
+  top: 0; 
+  font-size: 16px;
+  font-weight: bold;
+}
+
+table {
+    
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px; 
+     border-collapse: collapse;
+   
+    
+}
+
+td, th {
+    font-weight: bold;
+    
+}
+
+tr > td {
+    border: 2px solid black;
+    color: var(--cor4);
+    background-color: var(--cor1);
+    padding: 10px;
+}
+
+th {
+    border: 2px solid black;
+    color: var(--cor1);
+    background-color: var(--cor4);
+    
+}
+/* SEÇÃO */
+.card5-container {
+  display: block; /* Para os cards ficarem em coluna */
+  width: 400px; /* Largura fixa do container */
+  position: absolute; /* Usa position absolute para posicionar */
+  right: 0; /* Alinha o container à direita */
+  top: 525px; /* Ajuste este valor para mover para baixo */
+  margin-right: 20px; /* Adiciona uma margem à direita, se necessário */
+}
+
+h2{
+  font-size: 24px;
+  font-weight: 500;
+
+}
+.card5 {
+  display: flex; /* Para alinhar imagem e texto */
+  color: #FF4B00;
+  align-items: center; /* Alinha imagem e texto verticalmente */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra do card */
+  overflow: hidden; /* Para que a borda arredondada funcione */
+  width: 100%;
+  height: 110px; /* Largura do card ocupa 100% do container */
+  background: #fff; /* Fundo branco para o card */
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Espaçamento entre os cards */
+}
+
+.card5:hover {
+  transform: translateY(-5px); /* Move o card levemente para cima */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Aumenta a sombra do card */
+}
+.card5-image {
+  width: 140px; /* Largura da imagem */
+  height: 120px; /* Mantém a proporção da imagem */
+}
+
+.card5-content {
+  padding: 15px; /* Espaçamento interno do conteúdo */
+}
+
+
+
+/* SEÇÃO */
+
+@media (max-width: 768px) {
+  #cabeca {
+    flex-direction: column; 
+  }
+
+  .minha-lista {
+    list-style: none;
+    margin-left: 20px;
+    max-width: 155vh;
+  }
+  
+
+  .imagem0 iframe {
+    width: 1000px; 
+    height: 200px; 
+    margin-top: 50px;
+  }
+
+  #cabeca2 {
+    margin-top: 50px;
+    transform: translateX(-70px); 
+  }
+  h3 {
+    font-size: 16px; 
+  }
+
+
+  .minha-lista, .lista1 {
+    max-width: 100%; 
+  }
+
+ 
+  .lista1-item {
+    font-size: 14px;
+    margin-bottom: 10px; 
+    font-size: 13px;
+    position: relative; 
+  }
+
+  
+  
+  table {
+    width: 50%; 
+    font-size: 11px; 
+  }
+
+  
+  td, th {
+    padding: 8px; 
+  }
+
+  .card5-container {
+
+    position: relative; /* Remove o posicionamento absoluto */
+    width: 90%; /* Faz com que o container ocupe 100% da largura */
+    margin: 0 auto; /* Centraliza o container */
+    top: auto; /* Remove qualquer ajuste no topo */
+}
+
+.card5 {
+    width: 100%; /* Ajusta a largura dos cards para 100% da tela */
+}
+
+}

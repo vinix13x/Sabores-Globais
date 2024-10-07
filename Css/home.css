@@ -35,9 +35,22 @@ html {
   margin-right: -8px;
 }
 
-.texto {
-  max-width: 60%; 
+
+.info-container {
+  display: flex; /* Coloca as divs lado a lado */
+  gap: 20px; /* Espaçamento horizontal entre os itens */
 }
+
+.info {
+  display: flex; /* Mantém ícone e texto alinhados */
+  align-items: center;
+  color: #333;
+}
+
+.info i {
+  margin-right: 18Px; /* Espaço entre o ícone e o texto */
+}
+
 
 #feijoada {
   font-size: 46px;
