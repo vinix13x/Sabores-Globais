@@ -102,12 +102,12 @@ li {
 }
 
 table {
-    
+    width: 900px;
     text-align: center;
     margin: auto;
     margin-bottom: 20px; 
-     border-collapse: collapse;
-   
+    border-collapse: collapse;
+
     
 }
 
