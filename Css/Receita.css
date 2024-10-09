@@ -188,9 +188,11 @@ h2{
   
 
   .imagem0 iframe {
-    width: 1000px; 
-    height: 200px; 
+    width: 100%; 
+    height: 350px; 
     margin-top: 50px;
+    position: relative;
+    left: -30px;
   }
 
   #cabeca2 {
