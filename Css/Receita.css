@@ -2,7 +2,7 @@
 
 
 
-iframe {
+.imagem0 iframe  {
   width: 700px;
   max-width: 80%;
   height: 295px;
@@ -11,6 +11,8 @@ iframe {
   margin-top: 20px; 
   margin-bottom: 20px;
 }
+
+
 
 h3 {
   font-size: 18px;
@@ -180,15 +182,20 @@ h2{
     flex-direction: column; 
   }
 
+
+  .imagem0 {
+    width: 180%; /* Garante que a div pai ocupe toda a largura disponível */
+    transform: translateX(98px);
+  }
   .minha-lista {
     list-style: none;
     margin-left: 20px;
+    margin-right: 45px;
     max-width: 155vh;
   }
   
 
   .imagem0 iframe {
-    width: 100%; 
     height: 350px; 
     margin-top: 50px;
     position: relative;
