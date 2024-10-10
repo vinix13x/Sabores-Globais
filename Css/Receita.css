@@ -185,7 +185,7 @@ h2{
 
   .imagem0 {
     width: 190%; /* Garante que a div pai ocupe toda a largura disponível */
-    transform: translateX(98px);
+    
     display: flex;
     justify-items: center;
   }
